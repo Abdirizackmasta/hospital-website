@@ -1,0 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #352d08;
+    /* background-color: #ffd700; */
+    padding: 0 5%;
+    position: relative;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+  .logo img {
+    width: 62px; /* Adjust the width of the logo as needed */
+    height: 62px;
+    border-radius: 50%;
+  }
+  
+  .navbar-items {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-items li {
+    margin: 0 15px;
+  }
+  
+  .navbar-items a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .phone a{
+    font-size: 15px;
+    vertical-align: middle;
+  }
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-items {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 66px;
+      right: 0;
+      /* background-color: #ffd700; */
+      background-color: black;
+      width: 50%;
+      height: 50vh;
+      text-align: center;
+      z-index: 99;
+    }
+    .navbar-logo img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+  
+    .navbar.open .navbar-items {
+      display: flex;
+      gap: 30px;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+    }
+  }

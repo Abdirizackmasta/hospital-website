@@ -1,0 +1,48 @@
+.container{
+    padding: 70px 5%;
+}
+.hero-container{
+    background-image: linear-gradient(to right, rgba(59, 53, 53, 0.3), rgba(59, 53, 53, 0.5)), url(../images/hero.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+.hero-text{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    max-width: 500px;
+ 
+}
+.hero-text h1{
+    margin-bottom: 30px;
+    color:#fff;
+   font-size: 40px;
+}
+.hero-text p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5rem;
+}
+.appointment{
+    background: #352d08;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+/* media query */
+@media screen and (max-width: 550px){
+    .hero-text h1{
+        font-size: 18px;
+     }
+}

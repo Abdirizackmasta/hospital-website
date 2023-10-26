@@ -1,0 +1,14 @@
+.booking-form-heading h1{
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #352d08;
+}
+.booking-form-heading h1::before{
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 35px;
+    background-color:#352d08;
+    left: -10px;
+}
